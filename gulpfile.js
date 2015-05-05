@@ -14,7 +14,7 @@ gulp.task('default', function() {
 
 gulp.task('modules', function() {
   browserify({
-    entries: './main.js',
+    entries: './app.js',
     debug: true
   })
   .transform(babelify)
