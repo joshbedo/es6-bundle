@@ -1,4 +1,4 @@
-import arrowFunctions from './modules/arrowFunctions';
-import anotherComponent from './modules/anotherComponent';
+import arrowFunctions from './components/arrowFunctions';
+import anotherComponent from './components/anotherComponent';
 
 console.log(arrowFunctions, anotherComponent);
