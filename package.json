@@ -1,0 +1,26 @@
+{
+  "name": "es6-bundle",
+  "version": "1.0.0",
+  "description": "Bundle ES6 modules",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/joshbedo/es6-bundle.git"
+  },
+  "author": "Josh Bedo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/joshbedo/es6-bundle/issues"
+  },
+  "homepage": "https://github.com/joshbedo/es6-bundle",
+  "devDependencies": {
+    "babelify": "^6.0.2",
+    "browserify": "^10.1.0",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^5.1.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
