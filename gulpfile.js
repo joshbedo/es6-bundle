@@ -4,13 +4,7 @@ var babelify   = require('babelify');
 var browserify = require('browserify');
 var source     = require('vinyl-source-stream');
 
-var path = ['app.js', 'modules/*.js'];
-
-gulp.task('default', function() {
-  return gulp.src(path)
-    .pipe(babel())
-    .pipe(gulp.dest('./build'));
-});
+var path = ['./components/*.js'];
 
 gulp.task('modules', function() {
   browserify({
@@ -24,5 +18,7 @@ gulp.task('modules', function() {
 });
 
 gulp.task('watch', function() {
-  gulp.watch(path, ['default', 'modules']);
+  gulp.watch(path, ['modules']);
 });
+
+gulp.task('default', ['modules']);
